@@ -36,6 +36,10 @@ yarn-error.log*
 # vercel
 .vercel
 
+# local-only assets (screenshots, source mockups)
+/Gemini_Generated_Image_*.png
+/screencapture-*.png
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
