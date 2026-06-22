@@ -162,7 +162,7 @@ export default function BusinessGasPage() {
 
       <CtaBanner
         title="Find your cheapest gas contract."
-        body="20+ UK gas suppliers compared live. No fees. Switch in 30 seconds."
+        body="20+ UK gas suppliers compared live. No fees. Switch in 4-13 hours."
       />
     </>
   );

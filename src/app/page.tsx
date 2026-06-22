@@ -120,7 +120,7 @@ export default function HomePage() {
               </Badge>
               <h1 className="t-display t-serif text-ink">
                 Switch your business energy in{" "}
-                <span className="text-accent-green">30 seconds.</span>
+                <span className="text-accent-green">4-12 hours.</span>
               </h1>
               <p className="t-lead text-ink/70 mt-6 max-w-xl">
                 The UK&apos;s only marketplace with live business electricity
@@ -131,7 +131,7 @@ export default function HomePage() {
               <p className="t-lead text-ink/70 mt-4 max-w-xl">
                 We pull live tariffs from 20+ UK suppliers, rank them against
                 your actual consumption profile, and let you e-sign your new
-                contract online in under thirty seconds. Independent since
+                contract online in under 4-13 hours. Independent since
                 2007. Free to use, paid by suppliers, never by you. Over
                 <span className="text-accent-green font-semibold"> £150M
                 saved</span> for 500,000+ UK businesses to date.
@@ -206,8 +206,8 @@ export default function HomePage() {
               image={IMG.pylons}
               tag="Electricity"
               title="Business Electricity"
-              body="Live tariffs from every major UK supplier, ranked against your actual annual consumption rather than estimates. E-sign your new contract online in thirty seconds with no credit check, and we line the switch up to start the day your existing contract ends."
-              features={["20+ UK suppliers", "30-second e-sign", "Zero supply downtime"]}
+              body="Live tariffs from every major UK supplier, ranked against your actual annual consumption rather than estimates. E-sign your new contract online in 4-13 hours with no credit check, and we line the switch up to start the day your existing contract ends."
+              features={["20+ UK suppliers", "4-13 hour e-sign", "Zero supply downtime"]}
               stat="Avg saving"
               statValue="27% / yr"
               href="/business-electricity"
@@ -356,7 +356,7 @@ export default function HomePage() {
                       {i === 0
                         ? "~15 seconds"
                         : i === 1
-                        ? "~30 seconds"
+                        ? "~4-13 hours"
                         : "Online e-sign"}
                     </p>
                   </div>
@@ -402,7 +402,7 @@ export default function HomePage() {
           {HOME_TESTIMONIALS.map((t, i) => (
             <div
               key={i}
-              className="w-[500px] md:w-[560px] h-[440px] flex-shrink-0 flex"
+              className="w-[300px] md:w-[560px] h-[460px] md:h-[440px] flex-shrink-0 flex"
             >
               <TestimonialCard {...t} />
             </div>
@@ -428,7 +428,7 @@ export default function HomePage() {
 
       <CtaBanner
         eyebrow="Free comparison · No credit check"
-        title="See your business savings in 30 seconds."
+        title="See your business savings in 4-13 hours."
         body="Live prices from 20+ UK suppliers. Switched online. £150M+ saved already."
       />
     </>
@@ -602,7 +602,7 @@ function TestimonialCard({
   return (
     <Card
       variant={featured ? "gold-tint" : "paper"}
-      className={`card-hover relative !p-6 border flex flex-col w-full h-full ${
+      className={`card-hover relative !p-4 md:!p-6 border flex flex-col w-full h-full ${
         featured ? "border-gold/40" : "border-hairline"
       }`}
     >
@@ -617,7 +617,7 @@ function TestimonialCard({
         &ldquo;
       </span>
 
-      <div className="relative flex-1 flex flex-col">
+      <div className="relative flex-1 flex flex-col min-h-0">
         <div className="flex items-center justify-between mb-3">
           <div className="flex gap-0.5 text-gold text-base">★★★★★</div>
           {featured && (
@@ -626,7 +626,7 @@ function TestimonialCard({
             </span>
           )}
         </div>
-        <p className="t-lead text-ink leading-snug flex-1">{quote}</p>
+        <p className="text-[12px] leading-[1.5] md:t-lead md:leading-snug text-ink flex-1 min-h-0 overflow-hidden line-clamp-[9] md:line-clamp-none">{quote}</p>
 
         {(saved || switchedFrom || since) && (
           <div

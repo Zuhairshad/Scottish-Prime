@@ -10,7 +10,7 @@ import { CtaBanner } from "@/components/sections/cta-banner";
 export const metadata = {
   title: "Business Electricity Comparison, Scottish Prime Energy",
   description:
-    "Compare live business electricity prices from 20+ UK suppliers and switch online in under 30 seconds.",
+    "Compare live business electricity prices from 20+ UK suppliers and switch online in under 4-13 hours.",
 };
 
 export default function BusinessElectricityPage() {
@@ -173,7 +173,7 @@ export default function BusinessElectricityPage() {
 
       <CtaBanner
         title="Find your cheapest electricity rate."
-        body="20+ suppliers compared live. Free to use. Switch in under 30 seconds."
+        body="20+ suppliers compared live. Free to use. Switch in under 4-13 hours."
       />
     </>
   );

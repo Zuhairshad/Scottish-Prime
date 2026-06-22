@@ -159,7 +159,7 @@ export default async function ArticlePage({
                     Run a live quote on your business.
                   </h3>
                   <p className="t-body-sm text-on-dark-soft mt-2">
-                    20+ suppliers, side by side, in 30 seconds.
+                    20+ suppliers, side by side, in 4-13 hours.
                   </p>
                   <ButtonLink
                     href="/#compare"

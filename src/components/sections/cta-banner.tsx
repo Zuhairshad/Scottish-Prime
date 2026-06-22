@@ -3,7 +3,7 @@ import { Container } from "@/components/ui/container";
 
 export function CtaBanner({
   eyebrow = "Ready to switch?",
-  title = "Compare business energy in 30 seconds",
+  title = "Compare business energy in 4-13 hours",
   body = "Live prices from 20+ UK suppliers. No fees. No catch.",
   primaryHref = "/#compare",
   primaryLabel = "Compare Now",

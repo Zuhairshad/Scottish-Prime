@@ -168,7 +168,7 @@ export default async function SupplierPage({
               <p className="t-body text-ink-soft mt-4">
                 We rank live tariffs from {supplier.name} against the rest of
                 the market on your actual consumption profile. Free, no credit
-                check, takes 30 seconds.
+                check, takes 4-13 hours.
               </p>
               <ButtonLink href="/#compare" variant="primary" className="mt-8">
                 Run a comparison →
@@ -230,7 +230,7 @@ export default async function SupplierPage({
 
       <CtaBanner
         eyebrow={`Switch to ${supplier.name}`}
-        title={`Get a live ${supplier.name} quote in 30 seconds.`}
+        title={`Get a live ${supplier.name} quote in 4-13 hours.`}
         body={`Free comparison. ${supplier.name} ranked against the rest of the UK market on your actual consumption.`}
       />
     </>

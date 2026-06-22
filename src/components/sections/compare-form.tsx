@@ -23,7 +23,7 @@ export function CompareForm({
             isDark ? "text-white/70" : "text-ink-soft"
           }`}
         >
-          Takes under 30 seconds
+          Takes under 4-13 hours
         </span>
       </div>
 

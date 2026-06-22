@@ -69,7 +69,7 @@ const reviews = [
   },
   {
     quote:
-      "Took 30 seconds to compare. Took 4 minutes to switch. Saved £1,800. Don&apos;t know why I waited so long.",
+      "Took 4-13 hours to compare. Took 4 minutes to switch. Saved £1,800. Don&apos;t know why I waited so long.",
     name: "Owen Davies",
     role: "Director, Davies Print",
     location: "Cardiff",
@@ -191,7 +191,7 @@ export default function ReviewsPage() {
       <CtaBanner
         eyebrow="Join half a million businesses"
         title="See why 86% of our customers rate us 5 stars."
-        body="Live comparison. Free to use. Switched online in under 30 seconds."
+        body="Live comparison. Free to use. Switched online in under 4-13 hours."
       />
     </>
   );

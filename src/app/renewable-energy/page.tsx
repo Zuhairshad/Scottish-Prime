@@ -35,7 +35,7 @@ export default function RenewableEnergyPage() {
               <p className="t-lead text-white/75 mt-6 max-w-xl">
                 REGO-backed renewable electricity tariffs are now within a
                 penny of standard rates. Switch your UK business to certified
-                green energy in under 30 seconds.
+                green energy in under 4-13 hours.
               </p>
               <div className="flex flex-wrap gap-3 mt-8">
                 <ButtonLink href="/#compare" variant="on-dark-fill" size="lg">
@@ -190,7 +190,7 @@ export default function RenewableEnergyPage() {
       <CtaBanner
         eyebrow="Net-zero made simple"
         title="Switch your UK business to 100% renewable."
-        body="REGO-backed electricity from 12+ certified suppliers. Compare live in under 30 seconds."
+        body="REGO-backed electricity from 12+ certified suppliers. Compare live in under 4-13 hours."
       />
     </>
   );
