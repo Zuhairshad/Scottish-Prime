@@ -124,7 +124,7 @@ export function ScrollMarquee({
         className="sticky top-[108px] md:top-[120px] lg:top-[135px] h-[520px] md:h-[580px] flex flex-col overflow-hidden"
       >
         {/* Track */}
-        <div className="flex-1 flex items-center overflow-hidden">
+        <div className="flex-1 flex items-start pt-10 md:pt-16 overflow-hidden">
           <div
             ref={trackRef}
             className="flex items-stretch gap-8 w-max px-6 md:px-12 will-change-transform"
