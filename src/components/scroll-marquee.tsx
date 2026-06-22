@@ -17,6 +17,7 @@ export function ScrollMarquee({
   count?: number;
 }) {
   const wrapperRef = useRef<HTMLDivElement>(null);
+  const stickyRef = useRef<HTMLDivElement>(null);
   const trackRef = useRef<HTMLDivElement>(null);
   const progressBarRef = useRef<HTMLDivElement>(null);
   const counterRef = useRef<HTMLSpanElement>(null);
@@ -37,11 +38,11 @@ export function ScrollMarquee({
 
     const computeTarget = () => {
       const wrapper = wrapperRef.current;
-      if (!wrapper) return;
+      const sticky = stickyRef.current;
+      if (!wrapper || !sticky) return;
       const rect = wrapper.getBoundingClientRect();
-      const winH = window.innerHeight;
       const scrolled = -rect.top;
-      const range = wrapper.offsetHeight - winH;
+      const range = wrapper.offsetHeight - sticky.offsetHeight;
       const progress =
         range > 0 ? Math.max(0, Math.min(1, scrolled / range)) : 0;
       targetX = progress * cachedDistance;
@@ -82,7 +83,9 @@ export function ScrollMarquee({
 
     const measure = () => {
       cachedDistance = horizontalDistance();
-      setWrapperHeight(window.innerHeight + cachedDistance * speed);
+      const sticky = stickyRef.current;
+      const stickyH = sticky ? sticky.offsetHeight : window.innerHeight;
+      setWrapperHeight(stickyH + cachedDistance * speed);
       computeTarget();
       ensureRunning();
     };
@@ -116,7 +119,10 @@ export function ScrollMarquee({
       style={wrapperHeight ? { height: `${wrapperHeight}px` } : undefined}
       className="relative"
     >
-      <div className="sticky top-0 h-screen flex flex-col overflow-hidden">
+      <div
+        ref={stickyRef}
+        className="sticky top-[108px] md:top-[120px] lg:top-[135px] h-[520px] md:h-[580px] flex flex-col overflow-hidden"
+      >
         {/* Track */}
         <div className="flex-1 flex items-center overflow-hidden">
           <div

@@ -626,7 +626,7 @@ function TestimonialCard({
             </span>
           )}
         </div>
-        <p className="text-[12px] leading-[1.5] md:t-lead md:leading-snug text-ink flex-1 min-h-0 overflow-hidden line-clamp-[9] md:line-clamp-none">{quote}</p>
+        <p className="text-[15px] leading-relaxed md:text-[18px] md:leading-relaxed text-ink flex-1 min-h-0 overflow-hidden line-clamp-[9] md:line-clamp-none">{quote}</p>
 
         {(saved || switchedFrom || since) && (
           <div

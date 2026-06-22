@@ -263,7 +263,7 @@ function ReviewCard({
         <span className="t-body-sm text-ink/50">Verified</span>
       </div>
 
-      <p className="relative t-body text-ink leading-relaxed flex-1">
+      <p className="relative t-body md:text-[18px] text-ink leading-relaxed flex-1">
         {quote}
       </p>
 
