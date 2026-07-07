@@ -54,13 +54,44 @@ export function ContactForm() {
     );
   }
 
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const formData = new FormData(e.currentTarget);
+    const firstName = (formData.get("firstName") as string || "").trim();
+    const lastName = (formData.get("lastName") as string || "").trim();
+    const business = (formData.get("business") as string || "").trim();
+    const email = (formData.get("email") as string || "").trim();
+    const phone = (formData.get("phone") as string || "").trim();
+    const topic = formData.get("topic") as string;
+    const message = (formData.get("message") as string || "").trim();
+
+    try {
+      await fetch("/api/send-lead", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          formType: "Contact Form",
+          pageUrl: window.location.pathname,
+          firstName,
+          lastName,
+          business,
+          email,
+          phone,
+          topic,
+          message,
+        }),
+      });
+    } catch (err) {
+      console.error("Failed to submit lead:", err);
+    }
+
+    setSubmitted(true);
+  };
+
   return (
     <Card variant="paper" className="!p-8 border border-hairline">
       <form
-        onSubmit={(e) => {
-          e.preventDefault();
-          setSubmitted(true);
-        }}
+        onSubmit={handleSubmit}
         className="space-y-4"
       >
         <div className="grid grid-cols-2 gap-4">

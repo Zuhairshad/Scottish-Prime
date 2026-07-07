@@ -14,12 +14,31 @@ export function NewsletterForm() {
     );
   }
 
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const formData = new FormData(e.currentTarget);
+    const email = (formData.get("email") as string || "").trim();
+
+    try {
+      await fetch("/api/send-lead", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          formType: "Newsletter Form",
+          pageUrl: window.location.pathname,
+          email,
+        }),
+      });
+    } catch (err) {
+      console.error("Failed to submit lead:", err);
+    }
+
+    setSubmitted(true);
+  };
+
   return (
     <form
-      onSubmit={(e) => {
-        e.preventDefault();
-        setSubmitted(true);
-      }}
+      onSubmit={handleSubmit}
       className="flex gap-2 max-w-md"
     >
       <input

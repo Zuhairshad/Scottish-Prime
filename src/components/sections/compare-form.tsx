@@ -1,3 +1,6 @@
+"use client";
+
+import { useRouter } from "next/navigation";
 import { Badge } from "@/components/ui/badge";
 
 export function CompareForm({
@@ -6,10 +9,45 @@ export function CompareForm({
   variant?: "light" | "dark";
 }) {
   const isDark = variant === "dark";
+  const router = useRouter();
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const formData = new FormData(e.currentTarget);
+    const postcode = (formData.get("postcode") as string || "").trim();
+    const businessName = (formData.get("businessName") as string || "").trim();
+    const energyType = formData.get("energyType") as string;
+    const renewal = formData.get("renewal") as string;
+
+    try {
+      await fetch("/api/send-lead", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          formType: "Compare Form",
+          pageUrl: window.location.pathname,
+          postcode,
+          businessName,
+          energyType,
+          renewal,
+        }),
+      });
+    } catch (err) {
+      console.error("Failed to submit lead:", err);
+    }
+
+    const params = new URLSearchParams();
+    if (postcode) params.set("postcode", postcode);
+    if (businessName) params.set("businessName", businessName);
+    if (energyType) params.set("energyType", energyType);
+    if (renewal) params.set("renewal", renewal);
+
+    router.push(`/quote?${params.toString()}`);
+  };
+
   return (
     <form
-      action="/quote"
-      method="get"
+      onSubmit={handleSubmit}
       className={`rounded-[12px] p-6 md:p-8 ${
         isDark
           ? "bg-house-green text-white border border-white/10"
