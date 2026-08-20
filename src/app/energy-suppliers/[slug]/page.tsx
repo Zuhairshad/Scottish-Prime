@@ -21,7 +21,7 @@ export async function generateMetadata({
   const supplier = getSupplier(slug);
   if (!supplier) return { title: "Supplier not found" };
   return {
-    title: `${supplier.name} Business Energy, Scottish Prime Energy`,
+    title: `${supplier.name} Business Energy, Scott Prime Energy`,
     description: supplier.blurb,
   };
 }

@@ -1,9 +1,9 @@
 import { LegalPage } from "@/components/legal-page";
 
 export const metadata = {
-  title: "Terms of service, Scottish Prime Energy",
+  title: "Terms of service, Scott Prime Energy",
   description:
-    "Terms governing the use of Scottish Prime Energy's website and comparison services.",
+    "Terms governing the use of Scott Prime Energy's website and comparison services.",
 };
 
 export default function TermsPage() {
@@ -11,11 +11,11 @@ export default function TermsPage() {
     <LegalPage
       title="Terms of service"
       updated="June 2026"
-      intro="These terms govern your use of the Scottish Prime Energy website and our business energy comparison service. By using the site you accept these terms in full."
+      intro="These terms govern your use of the Scott Prime Energy website and our business energy comparison service. By using the site you accept these terms in full."
       sections={[
         {
           heading: "About us",
-          body: "Scottish Prime Energy Ltd is a Third-Party Intermediary (TPI) registered in England and Wales (placeholder Companies House no. 04967449), with its registered office at Bothwell Street, Glasgow, G2 4JR. References to 'we', 'us' and 'our' mean Scottish Prime Energy Ltd.",
+          body: "Scott Prime Energy Ltd is a Third-Party Intermediary (TPI) registered in England and Wales (placeholder Companies House no. 04967449), with its registered office at Bothwell Street, Glasgow, G2 4JR. References to 'we', 'us' and 'our' mean Scott Prime Energy Ltd.",
         },
         {
           heading: "Our service",

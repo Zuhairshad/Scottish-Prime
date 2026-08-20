@@ -26,8 +26,8 @@ export const articles: Article[] = [
     date: "12 June 2026",
     image: "https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?auto=format&fit=crop&w=1600&q=80",
     author: {
-      name: "Alex Carter",
-      role: "Head of Procurement, Scottish Prime Energy",
+      name: "Callum MacLeod",
+      role: "Head of Procurement, Scott Prime Energy",
     },
     body: [
       {
@@ -414,7 +414,7 @@ export const articles: Article[] = [
       {
         heading: "What we publish",
         paragraphs: [
-          "Scottish Prime Energy publishes our fee on every quote, clearly and on the first screen. We're paid by the supplier, not the customer, and you'll see exactly what that amount is before you sign.",
+          "Scott Prime Energy publishes our fee on every quote, clearly and on the first screen. We're paid by the supplier, not the customer, and you'll see exactly what that amount is before you sign.",
         ],
       },
     ],

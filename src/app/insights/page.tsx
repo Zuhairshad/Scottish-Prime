@@ -6,7 +6,7 @@ import { CtaBanner } from "@/components/sections/cta-banner";
 import { articles, type Article } from "@/data/articles";
 
 export const metadata = {
-  title: "Energy Market Insights, Scottish Prime Energy",
+  title: "Energy Market Insights, Scott Prime Energy",
   description:
     "UK business energy market analysis, switching guides and renewable energy explainers.",
 };

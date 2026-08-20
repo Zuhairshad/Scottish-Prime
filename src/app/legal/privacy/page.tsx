@@ -1,9 +1,9 @@
 import { LegalPage } from "@/components/legal-page";
 
 export const metadata = {
-  title: "Privacy policy, Scottish Prime Energy",
+  title: "Privacy policy, Scott Prime Energy",
   description:
-    "How Scottish Prime Energy collects, uses and protects business and personal data submitted through our comparison service.",
+    "How Scott Prime Energy collects, uses and protects business and personal data submitted through our comparison service.",
 };
 
 export default function PrivacyPage() {
@@ -27,7 +27,7 @@ export default function PrivacyPage() {
         },
         {
           heading: "Your rights",
-          body: "Under UK GDPR you have the right to access, correct, delete, port or restrict processing of your data. Email privacy@scottishprimeenergy.co.uk and we'll respond within 30 days. You also have the right to complain to the Information Commissioner's Office (ICO) at ico.org.uk.",
+          body: "Under UK GDPR you have the right to access, correct, delete, port or restrict processing of your data. Email privacy@scottprimeenergy.co.uk and we'll respond within 30 days. You also have the right to complain to the Information Commissioner's Office (ICO) at ico.org.uk.",
         },
         {
           heading: "Retention",

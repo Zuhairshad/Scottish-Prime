@@ -44,7 +44,7 @@ export function SuppliersGrid({ suppliers }: { suppliers: Supplier[] }) {
             type="text"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Search suppliers (e.g. Octopus, British Gas, EDF)…"
+            placeholder="Search suppliers (e.g. British Gas, EDF, E.ON Next)…"
             className="w-full h-14 rounded-[8px] bg-paper border border-hairline-strong pl-11 pr-12 t-body text-ink placeholder:text-ink-soft outline-none focus:border-accent-green focus:border-2"
           />
           {query && (

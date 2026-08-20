@@ -1,9 +1,9 @@
 import { LegalPage } from "@/components/legal-page";
 
 export const metadata = {
-  title: "Modern slavery statement, Scottish Prime Energy",
+  title: "Modern slavery statement, Scott Prime Energy",
   description:
-    "Scottish Prime Energy's annual statement under section 54 of the Modern Slavery Act 2015.",
+    "Scott Prime Energy's annual statement under section 54 of the Modern Slavery Act 2015.",
 };
 
 export default function ModernSlaveryPage() {
@@ -11,7 +11,7 @@ export default function ModernSlaveryPage() {
     <LegalPage
       title="Modern slavery statement"
       updated="Financial year 2025"
-      intro="This statement is published under section 54 of the Modern Slavery Act 2015. It sets out the steps Scottish Prime Energy Ltd has taken during the financial year to ensure modern slavery is not taking place in our business or supply chain."
+      intro="This statement is published under section 54 of the Modern Slavery Act 2015. It sets out the steps Scott Prime Energy Ltd has taken during the financial year to ensure modern slavery is not taking place in our business or supply chain."
       sections={[
         {
           heading: "Our business",
@@ -31,7 +31,7 @@ export default function ModernSlaveryPage() {
         },
         {
           heading: "Approval",
-          body: "This statement was approved by the Board of Scottish Prime Energy Ltd and signed by our CEO on behalf of the company. Future updates will be published on this page within six months of each financial year end.",
+          body: "This statement was approved by the Board of Scott Prime Energy Ltd and signed by our CEO on behalf of the company. Future updates will be published on this page within six months of each financial year end.",
         },
       ]}
     />

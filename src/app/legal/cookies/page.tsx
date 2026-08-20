@@ -1,9 +1,9 @@
 import { LegalPage } from "@/components/legal-page";
 
 export const metadata = {
-  title: "Cookies, Scottish Prime Energy",
+  title: "Cookies, Scott Prime Energy",
   description:
-    "What cookies Scottish Prime Energy sets, why, and how to manage them.",
+    "What cookies Scott Prime Energy sets, why, and how to manage them.",
 };
 
 export default function CookiesPage() {

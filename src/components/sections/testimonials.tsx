@@ -71,12 +71,12 @@ const testimonials: Testimonial[] = [
   },
   {
     quote:
-      "We run a small hotel, most brokers ignore us. The Scottish Prime team gave us proper procurement attention and shaved thirty-one percent off our annual gas bill.",
+      "We run a small hotel, most brokers ignore us. The Scott Prime team gave us proper procurement attention and shaved thirty-one percent off our annual gas bill.",
     name: "Catherine Brodie",
     role: "Founder, Brodie Hospitality",
     location: "Aberdeen",
     saved: "£3,460 / yr",
-    switchedFrom: "Octopus",
+    switchedFrom: "TotalEnergies",
     since: "2025",
   },
   {

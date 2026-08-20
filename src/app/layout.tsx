@@ -20,9 +20,9 @@ const lora = Lora({
 });
 
 export const metadata: Metadata = {
-  title: "Scottish Prime Energy, Compare Business Energy in 30 Seconds",
+  title: "Scott Prime Energy, Compare Business Energy in 30 Seconds",
   description:
-    "The UK's leading business energy comparison marketplace. Switch electricity and gas suppliers online in seconds. Trusted by 500,000+ UK businesses.",
+    "Compare 20+ UK business electricity and gas suppliers in seconds. Transparent broker fees, zero-pressure advice, and dedicated account management for UK SMEs.",
 };
 
 export default function RootLayout({

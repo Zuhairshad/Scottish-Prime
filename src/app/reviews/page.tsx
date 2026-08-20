@@ -5,9 +5,9 @@ import { Card } from "@/components/ui/card";
 import { CtaBanner } from "@/components/sections/cta-banner";
 
 export const metadata = {
-  title: "Customer Reviews, Scottish Prime Energy",
+  title: "Customer Reviews, Scott Prime Energy",
   description:
-    "Read 12,000+ verified reviews from UK businesses who&apos;ve switched with us. Trustpilot 4.8 / 5.",
+    "Read 12,000+ verified reviews from UK businesses who've switched with us. Trustpilot 4.8 / 5.",
 };
 
 const reviews = [

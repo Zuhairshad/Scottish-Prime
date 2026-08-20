@@ -25,11 +25,9 @@ const SUPPLIERS: Supplier[] = [
   { name: "British Gas",    short: "BG",  tint: "brand",  logo: `${WIKI}/British_Gas_logo.svg`                  },
   { name: "EDF Energy",     short: "EDF", tint: "accent", logo: `${WIKI}/EDF_Energy_logo.svg`                   },
   { name: "E.ON Next",      short: "EON", tint: "house",  logo: `${WIKI}/Logo_E.ON.svg`                         },
-  { name: "Octopus Energy", short: "Oc",  tint: "uplift", logo: `${WIKI}/Octopus_Energy_logo_(2019).svg`        },
   { name: "Scottish Power", short: "SP",  tint: "brand",  logo: `${WIKI}/ScottishPower_Logo_2023.svg`           },
   { name: "SSE",            short: "SSE", tint: "accent", logo: `${WIKI}/SSE_plc_logo.svg`                      },
   { name: "Drax",           short: "Dx",  tint: "house",  logo: `${WIKI}/DRAX_POWERBLUE_RGB.png`                },
-  { name: "Opus Energy",    short: "Op",  tint: "gold",   logo: "https://www.google.com/s2/favicons?domain=opusenergy.com&sz=128"           },
   { name: "Total Energies", short: "TE",  tint: "uplift", logo: `${WIKI}/TotalEnergies_logo.svg`                },
   { name: "Npower",         short: "N",   tint: "brand",  logo: `${WIKI}/RWE_npower_logo.png`                   },
   { name: "Pozitive",       short: "Pz",  tint: "accent", logo: "https://www.google.com/s2/favicons?domain=pozitiveenergy.co.uk&sz=128"    },
@@ -78,7 +76,7 @@ export function SupplierLogos({
                 : "bg-house-green text-white"
             }`}
           >
-            12 listed
+            10 listed
           </span>
         </div>
 

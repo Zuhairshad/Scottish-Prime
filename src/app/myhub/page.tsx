@@ -5,7 +5,7 @@ import { Card } from "@/components/ui/card";
 import { SignInForm } from "@/components/sign-in-form";
 
 export const metadata = {
-  title: "myHUB Sign In, Scottish Prime Energy",
+  title: "myHUB Sign In, Scott Prime Energy",
   description:
     "Sign in to myHUB, your business energy command centre. Contracts, invoices, meter reads and renewals in one place.",
 };
@@ -34,7 +34,7 @@ export default function MyHubPage() {
               </h1>
               <p className="t-lead text-on-dark-soft mt-6 max-w-lg">
                 Every contract, invoice, meter reading and renewal date in one
-                place. Free for every Scottish Prime customer.
+                place. Free for every Scott Prime customer.
               </p>
 
               <ul className="mt-8 space-y-3 t-body text-on-dark">
@@ -117,7 +117,7 @@ export default function MyHubPage() {
               <span className="t-eyebrow text-accent-green">Not a customer yet</span>
               <h3 className="t-h3 mt-2">Get a quote first, then sign up to myHUB.</h3>
               <p className="t-body text-ink-soft mt-2">
-                myHUB is free for every Scottish Prime customer, no separate
+                myHUB is free for every Scott Prime customer, no separate
                 subscription.
               </p>
             </div>

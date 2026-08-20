@@ -6,9 +6,9 @@ import { FaqList } from "@/components/sections/faq";
 import { CtaBanner } from "@/components/sections/cta-banner";
 
 export const metadata = {
-  title: "Renewable Business Energy, Scottish Prime Energy",
+  title: "Renewable Business Energy, Scott Prime Energy",
   description:
-    "100% REGO-backed renewable electricity tariffs and green gas for UK businesses. Compare 12+ green suppliers.",
+    "100% REGO-backed renewable electricity tariffs and green gas for UK businesses. Compare 10+ green suppliers.",
 };
 
 export default function RenewableEnergyPage() {

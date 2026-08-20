@@ -99,15 +99,15 @@ export function SiteFooter() {
             <span className="relative inline-flex items-center justify-center w-11 h-11 rounded-full overflow-hidden ring-1 ring-gold/50 bg-house-green">
               <img
                 src="/logo.png"
-                alt="Scottish Prime Energy"
+                alt="Scott Prime Energy"
                 className="absolute inset-0 w-full h-full object-cover"
                 style={{ transform: "scale(1.6)", objectPosition: "55% 50%" }}
               />
             </span>
-            <span className="t-body-sm-med text-white">Scottish Prime Energy</span>
+            <span className="t-body-sm-med text-white">Scott Prime Energy</span>
           </div>
           <p className="t-body-sm text-white/60">
-            © 2026 Scottish Prime Energy Ltd · Comparing UK business energy since 2007 ·{" "}
+            © 2026 Scott Prime Energy Ltd · Comparing UK business energy since 2007 ·{" "}
             <span className="text-gold">★</span> 4.8 / 5 · 500,000+ businesses served
           </p>
         </div>

@@ -4,9 +4,9 @@ import { SuppliersGrid } from "@/components/suppliers-grid";
 import { suppliers } from "@/data/suppliers";
 
 export const metadata = {
-  title: "UK Energy Suppliers Directory, Scottish Prime Energy",
+  title: "UK Energy Suppliers Directory, Scott Prime Energy",
   description:
-    "Profiles of every major UK business energy supplier, British Gas, EDF, E.ON Next, Octopus and more.",
+    "Profiles of every major UK business energy supplier, British Gas, EDF, E.ON Next, Scottish Power, SSE, Drax and more.",
 };
 
 export default function SuppliersPage() {
@@ -28,7 +28,7 @@ export default function SuppliersPage() {
                 Supplier directory
               </span>
               <span className="h-px w-12 bg-hairline-strong" />
-              <span className="t-body-sm text-ink-soft">12 profiles</span>
+              <span className="t-body-sm text-ink-soft">10 profiles</span>
             </div>
             <h1 className="t-hero t-serif text-ink">
               Every UK business energy supplier,{" "}

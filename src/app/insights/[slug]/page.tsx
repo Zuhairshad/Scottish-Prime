@@ -20,7 +20,7 @@ export async function generateMetadata({
   const article = getArticle(slug);
   if (!article) return { title: "Article not found" };
   return {
-    title: `${article.title}, Scottish Prime Energy`,
+    title: `${article.title}, Scott Prime Energy`,
     description: article.excerpt,
   };
 }
@@ -143,7 +143,7 @@ export default async function ArticlePage({
                       {article.author.role}
                     </p>
                     <p className="t-body-sm text-ink-soft mt-3">
-                      Part of the Scottish Prime Energy procurement team, 500,000+
+                      Part of the Scott Prime Energy procurement team, 500,000+
                       UK businesses switched, £150M+ saved.
                     </p>
                   </div>

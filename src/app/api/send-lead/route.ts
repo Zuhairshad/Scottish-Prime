@@ -15,7 +15,7 @@ export async function POST(req: Request) {
     const smtpPass = process.env.SMTP_PASSWORD || process.env.SMTP_PASS;
 
     const recipient = process.env.LEAD_RECIPIENT_EMAIL || "info@scottprimeenergy.co.uk";
-    const sender = process.env.LEAD_SENDER_EMAIL || `"Scottish Prime Energy" <${smtpUser}>`;
+    const sender = process.env.LEAD_SENDER_EMAIL || `"Scott Prime Energy" <${smtpUser}>`;
 
     console.log(`[Lead received] Form: ${formType}, Page: ${pageUrl}`, fields);
 
@@ -44,7 +44,7 @@ export async function POST(req: Request) {
       .map(([key, val]) => `<li><strong>${key}:</strong> ${val}</li>`)
       .join("\n");
 
-    const subject = `[Scottish Prime Lead] ${formType} submitted from ${pageUrl}`;
+    const subject = `[Scott Prime Lead] ${formType} submitted from ${pageUrl}`;
     const emailBody = `
       <div style="font-family: Arial, sans-serif; max-width: 600px; color: #1e3932; padding: 20px; border: 1px solid #e7e7e7; border-radius: 8px;">
         <h2 style="color: #006241; margin-top: 0;">New Form Submission Received</h2>

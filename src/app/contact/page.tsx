@@ -5,7 +5,7 @@ import { Card } from "@/components/ui/card";
 import { ContactForm } from "@/components/contact-form";
 
 export const metadata = {
-  title: "Contact Us, Scottish Prime Energy",
+  title: "Contact Us, Scott Prime Energy",
   description:
     "Talk to a UK business energy specialist. Phone, email, or send us a message.",
 };

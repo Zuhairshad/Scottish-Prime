@@ -6,7 +6,7 @@ import { FaqList } from "@/components/sections/faq";
 import { CtaBanner } from "@/components/sections/cta-banner";
 
 export const metadata = {
-  title: "Business Meter Installation, Scottish Prime Energy",
+  title: "Business Meter Installation, Scott Prime Energy",
   description:
     "Free smart, half-hourly and standard meter installation for UK businesses. Managed end to end.",
 };
@@ -195,7 +195,7 @@ export default function MeterInstallationPage() {
         items={[
           {
             q: "Do I have to pay for a new meter?",
-            a: "No. When you switch your supply through Scottish Prime Energy, the meter install is free, covered by your supplier as part of the contract.",
+            a: "No. When you switch your supply through Scott Prime Energy, the meter install is free, covered by your supplier as part of the contract.",
           },
           {
             q: "Will my supply be interrupted during install?",

@@ -1,4 +1,4 @@
-// PM2 process definition for Scottish Prime Energy.
+// PM2 process definition for Scott Prime Energy.
 // Start:  pm2 start ecosystem.config.js
 // Reload: pm2 reload ecosystem.config.js --update-env
 module.exports = {

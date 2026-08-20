@@ -91,7 +91,7 @@ export function SignInForm() {
         </Button>
 
         <p className="t-body-sm text-ink-soft text-center pt-2">
-          New to Scottish Prime?{" "}
+          New to Scott Prime?{" "}
           <Link
             href="/#compare"
             className="text-accent-green hover:underline t-body-sm-med"

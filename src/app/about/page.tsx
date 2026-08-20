@@ -5,7 +5,7 @@ import { Card } from "@/components/ui/card";
 import { CtaBanner } from "@/components/sections/cta-banner";
 
 export const metadata = {
-  title: "About Us, Scottish Prime Energy",
+  title: "About Us, Scott Prime Energy",
   description:
     "Comparing UK business energy since 2007. Over £150M saved for 500,000+ UK businesses.",
 };
@@ -27,7 +27,7 @@ export default function AboutPage() {
                 businesses.
               </h1>
               <p className="t-lead text-ink/70 mt-7 max-w-xl">
-                We started Scottish Prime Energy to fix the most frustrating part
+                We started Scott Prime Energy to fix the most frustrating part
                 of running a UK business: buying energy. Two decades later,
                 we&apos;re the country&apos;s leading independent marketplace, 
                 live prices, transparent rates, switched online in thirty
@@ -52,7 +52,7 @@ export default function AboutPage() {
               <div className="relative rounded-[12px] overflow-hidden aspect-[4/5] shadow-card">
                 <img
                   src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1400&q=80"
-                  alt="Scottish Prime Energy team in a collaborative working session"
+                  alt="Scott Prime Energy team in a collaborative working session"
                   className="absolute inset-0 w-full h-full object-cover"
                   loading="eager"
                 />
@@ -101,7 +101,7 @@ export default function AboutPage() {
               <Milestone
                 year="2012"
                 title="100,000 businesses served"
-                body="Crossed our first major milestone, over 100,000 UK SMEs switched through Scottish Prime."
+                body="Crossed our first major milestone, over 100,000 UK SMEs switched through Scott Prime."
               />
               <Milestone
                 year="2017"

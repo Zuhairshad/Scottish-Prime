@@ -4,7 +4,7 @@ import { Card } from "@/components/ui/card";
 import { QuoteResults, type Quote } from "@/components/quote-results";
 
 export const metadata = {
-  title: "Your live quotes, Scottish Prime Energy",
+  title: "Your live quotes, Scott Prime Energy",
   description:
     "Live business energy quotes ranked cheapest-first from every major UK supplier.",
 };
@@ -35,19 +35,6 @@ const QUOTES: Quote[] = [
     tier: "SME",
   },
   {
-    supplier: "Octopus Energy",
-    short: "Oc",
-    tint: "uplift",
-    unitRate: "24.18p / kWh",
-    standingCharge: "41.20p / day",
-    annual: 10240,
-    contract: "24 months",
-    contractMonths: 24,
-    green: true,
-    tier: "Challenger",
-    badge: "Most popular",
-  },
-  {
     supplier: "E.ON Next",
     short: "EON",
     tint: "house",
@@ -58,6 +45,7 @@ const QUOTES: Quote[] = [
     contractMonths: 12,
     green: true,
     tier: "Major",
+    badge: "Most popular",
   },
   {
     supplier: "British Gas",
@@ -96,16 +84,16 @@ const QUOTES: Quote[] = [
     tier: "Major",
   },
   {
-    supplier: "Opus Energy",
-    short: "Op",
-    tint: "gold",
-    unitRate: "25.92p / kWh",
-    standingCharge: "42.80p / day",
-    annual: 10980,
-    contract: "12 months",
-    contractMonths: 12,
-    green: true,
-    tier: "SME",
+    supplier: "SSE",
+    short: "SSE",
+    tint: "accent",
+    unitRate: "25.80p / kWh",
+    standingCharge: "42.50p / day",
+    annual: 10920,
+    contract: "24 months",
+    contractMonths: 24,
+    green: false,
+    tier: "Major",
   },
 ];
 

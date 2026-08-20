@@ -42,7 +42,7 @@ export function SiteHeader() {
         <Container className="flex items-center justify-between h-[72px] lg:h-[83px]">
           <Link href="/" className="flex items-center gap-2.5 press">
             <Logo />
-            <span className="t-h5 text-ink">Scottish Prime</span>
+            <span className="t-h5 text-ink">Scott Prime</span>
           </Link>
 
           <nav className="hidden lg:flex items-center gap-7">
@@ -73,7 +73,7 @@ function Logo() {
     <span className="relative inline-flex items-center justify-center w-11 h-11 rounded-full overflow-hidden ring-1 ring-gold/50 bg-house-green">
       <img
         src="/logo.png"
-        alt="Scottish Prime Energy"
+        alt="Scott Prime Energy"
         className="absolute inset-0 w-full h-full object-cover"
         style={{ transform: "scale(1.6)", objectPosition: "55% 50%" }}
       />

@@ -113,7 +113,7 @@ export default function HomePage() {
             </h2>
             <p className="t-lead text-ink/70 mt-4">
               From live comparison to procurement, meter installation and
-              renewable supply, Scottish Prime Energy is the single platform
+              renewable supply, Scott Prime Energy is the single platform
               behind your business energy.
             </p>
           </div>
@@ -144,8 +144,8 @@ export default function HomePage() {
               image={IMG.solar}
               tag="Renewable"
               title="Renewable Energy"
-              body="100% REGO-backed renewable electricity from twelve certified UK suppliers, often within a penny per kWh of standard rates. Cut your Scope 2 emissions to zero with audit-ready evidence for CDP, SECR and procurement frameworks."
-              features={["REGO-certified", "Zero Scope 2", "12+ green suppliers"]}
+              body="100% REGO-backed renewable electricity from ten certified UK suppliers, often within a penny per kWh of standard rates. Cut your Scope 2 emissions to zero with audit-ready evidence for CDP, SECR and procurement frameworks."
+              features={["REGO-certified", "Zero Scope 2", "10+ green suppliers"]}
               stat="Premium"
               statValue="< 1p / kWh"
               href="/renewable-energy"
@@ -168,7 +168,7 @@ export default function HomePage() {
         <Container className="py-20 md:py-24">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <span className="t-eyebrow text-gold">Why Scottish Prime</span>
+              <span className="t-eyebrow text-gold">Why Scott Prime</span>
               <h2 className="t-h1 text-white mt-3">
                 Comparing UK business energy{" "}
                 <span className="text-gold">since 2007.</span>
@@ -199,7 +199,7 @@ export default function HomePage() {
             <div className="relative rounded-[12px] overflow-hidden aspect-[4/5] lg:aspect-[3/4] shadow-card">
               <img
                 src={IMG.team}
-                alt="Scottish Prime Energy UK procurement team"
+                alt="Scott Prime Energy UK procurement team"
                 className="absolute inset-0 w-full h-full object-cover"
                 loading="lazy"
               />
@@ -300,7 +300,7 @@ export default function HomePage() {
             <div>
               <span className="t-eyebrow text-gold">As featured in</span>
               <h3 className="t-h3 text-ink mt-2 max-w-sm">
-                The UK press on Scottish Prime Energy.
+                The UK press on Scott Prime Energy.
               </h3>
             </div>
             <PressStrip />
@@ -334,7 +334,7 @@ const homeFaqs = [
   },
   {
     q: "Do you charge any fees?",
-    a: "Scottish Prime Energy is free to use. We're paid by suppliers, never by you, and every broker fee is disclosed on your quote.",
+    a: "Scott Prime Energy is free to use. We're paid by suppliers, never by you, and every broker fee is disclosed on your quote.",
   },
 ];
 

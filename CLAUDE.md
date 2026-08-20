@@ -18,7 +18,7 @@ There is no linter, test runner, or typecheck script wired up — `npm run build
 
 ## Project
 
-Scottish Prime Energy — a marketing / lead-generation site for UK business energy comparison. It is a **content-and-forms site**: no database, no auth, no CMS. All content lives in TypeScript, and the only backend is a single lead-capture email endpoint.
+Scott Prime Energy — a marketing / lead-generation site for UK business energy comparison. It is a **content-and-forms site**: no database, no auth, no CMS. All content lives in TypeScript, and the only backend is a single lead-capture email endpoint.
 
 - **Stack:** Next.js 16 (App Router, Turbopack), React 19, TypeScript (strict), Tailwind CSS v4.
 - **Path alias:** `@/*` → `./src/*`.

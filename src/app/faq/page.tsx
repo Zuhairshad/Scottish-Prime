@@ -5,7 +5,7 @@ import { Card } from "@/components/ui/card";
 import { CtaBanner } from "@/components/sections/cta-banner";
 
 export const metadata = {
-  title: "FAQ, Scottish Prime Energy",
+  title: "FAQ, Scott Prime Energy",
   description:
     "Answers to the most common questions about UK business energy comparison, switching, contracts and renewals.",
 };
@@ -75,7 +75,7 @@ const sections: Section[] = [
       },
       {
         q: "Do you charge any fees?",
-        a: "Scottish Prime Energy is free to use. We&apos;re paid by suppliers, never by you.",
+        a: "Scott Prime Energy is free to use. We&apos;re paid by suppliers, never by you.",
       },
       {
         q: "What&apos;s the standing charge?",
@@ -136,7 +136,7 @@ const sections: Section[] = [
       },
       {
         q: "What is myHUB?",
-        a: "Our customer portal, every contract, invoice, meter reading and renewal date in one place. Free for every Scottish Prime customer.",
+        a: "Our customer portal, every contract, invoice, meter reading and renewal date in one place. Free for every Scott Prime customer.",
       },
       {
         q: "Are you regulated by Ofgem?",

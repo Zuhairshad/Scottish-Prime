@@ -8,7 +8,7 @@ import { FaqList } from "@/components/sections/faq";
 import { CtaBanner } from "@/components/sections/cta-banner";
 
 export const metadata = {
-  title: "Business Gas Comparison, Scottish Prime Energy",
+  title: "Business Gas Comparison, Scott Prime Energy",
   description:
     "Compare live business gas prices across every major UK supplier. Switch online with no fees and no downtime.",
 };

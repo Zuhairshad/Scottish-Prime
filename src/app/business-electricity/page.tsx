@@ -8,7 +8,7 @@ import { FaqList } from "@/components/sections/faq";
 import { CtaBanner } from "@/components/sections/cta-banner";
 
 export const metadata = {
-  title: "Business Electricity Comparison, Scottish Prime Energy",
+  title: "Business Electricity Comparison, Scott Prime Energy",
   description:
     "Compare live business electricity prices from 20+ UK suppliers and switch online in under 4-13 hours.",
 };
