@@ -32,9 +32,10 @@ Scottish Prime Energy — a marketing / lead-generation site for UK business ene
 To add a supplier or article, append a typed object to the relevant array — routing, static params, and metadata flow from the data automatically. Both types carry a `variant` field keyed to the brand color system below.
 
 ### Lead capture is the only server code
-Every form (`contact-form`, `compare-form`, `newsletter-form`, `sign-in-form`) is a `"use client"` component that POSTs JSON to `POST /api/send-lead` ([route.ts](src/app/api/send-lead/route.ts)). The convention: send `{ formType, pageUrl, ...arbitraryFields }`. The route emails all fields via **Resend**.
+Every form (`contact-form`, `compare-form`, `newsletter-form`) is a `"use client"` component that POSTs JSON to `POST /api/send-lead` ([route.ts](src/app/api/send-lead/route.ts)). The convention: send `{ formType, pageUrl, ...arbitraryFields }`. The route delivers emails directly via standard SMTP (Namecheap Private Email / Webmail) using `nodemailer`.
 
-Env vars (all optional): `RESEND_API_KEY`, `LEAD_RECIPIENT_EMAIL`, `LEAD_SENDER_EMAIL`. If `RESEND_API_KEY` is missing or the placeholder, the route **logs the lead and returns success without sending** — forms work in local dev with no config.
+Env vars: `SMTP_HOST`, `SMTP_PORT`, `SMTP_SECURE`, `SMTP_USER`, `SMTP_PASSWORD`, `LEAD_RECIPIENT_EMAIL`, `LEAD_SENDER_EMAIL`. If `SMTP_PASSWORD` is missing or placeholder, the route **logs the lead and returns success without sending** — forms work in local dev with no config.
+
 
 ### Components
 - `src/components/ui/` — primitives (`Button`/`ButtonLink`, `Card`, `Badge`, `Container`). `Button` variants encode brand roles (e.g. `primary`, `on-dark-fill`); prefer these over ad-hoc classes.

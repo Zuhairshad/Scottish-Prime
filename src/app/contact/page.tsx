@@ -38,7 +38,7 @@ export default function ContactPage() {
 
             <div className="mt-8 flex flex-wrap gap-x-8 gap-y-3 t-body-sm-med text-white">
               <span><span className="text-gold">★</span> 0800 9888 375</span>
-              <span><span className="text-gold">★</span> hello@scottishprimeenergy.co.uk</span>
+              <span><span className="text-gold">★</span> info@scottprimeenergy.co.uk</span>
               <span><span className="text-gold">★</span> Under 1hr response</span>
             </div>
           </div>
@@ -54,7 +54,7 @@ export default function ContactPage() {
               title="Get a quote"
               body="Talk through your renewal or set up a new contract with our procurement team."
               phone="0800 9888 375"
-              email="hello@scottishprimeenergy.co.uk"
+              email="info@scottprimeenergy.co.uk"
             />
             <ContactCard
               tag="Support"
