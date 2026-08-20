@@ -74,8 +74,7 @@ function Logo() {
       <img
         src="/logo.png"
         alt="Scott Prime Energy"
-        className="absolute inset-0 w-full h-full object-cover"
-        style={{ transform: "scale(1.6)", objectPosition: "55% 50%" }}
+        className="w-full h-full object-cover"
       />
     </span>
   );

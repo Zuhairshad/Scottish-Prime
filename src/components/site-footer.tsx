@@ -100,8 +100,7 @@ export function SiteFooter() {
               <img
                 src="/logo.png"
                 alt="Scott Prime Energy"
-                className="absolute inset-0 w-full h-full object-cover"
-                style={{ transform: "scale(1.6)", objectPosition: "55% 50%" }}
+                className="w-full h-full object-cover"
               />
             </span>
             <span className="t-body-sm-med text-white">Scott Prime Energy</span>
