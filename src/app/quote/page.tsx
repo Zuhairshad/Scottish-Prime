@@ -9,11 +9,14 @@ export const metadata = {
     "Live business energy quotes ranked cheapest-first from every major UK supplier.",
 };
 
+import { SUPPLIER_LOGOS } from "@/data/suppliers";
+
 const QUOTES: Quote[] = [
   {
     supplier: "Pozitive Energy",
     short: "Pz",
     tint: "accent",
+    logo: SUPPLIER_LOGOS["pozitive-energy"],
     unitRate: "23.41p / kWh",
     standingCharge: "38.60p / day",
     annual: 9840,
@@ -26,6 +29,7 @@ const QUOTES: Quote[] = [
     supplier: "Yu Energy",
     short: "Yu",
     tint: "gold",
+    logo: SUPPLIER_LOGOS["yu-energy"],
     unitRate: "24.02p / kWh",
     standingCharge: "39.10p / day",
     annual: 10110,
@@ -38,6 +42,7 @@ const QUOTES: Quote[] = [
     supplier: "E.ON Next",
     short: "EON",
     tint: "house",
+    logo: SUPPLIER_LOGOS["eon-next"],
     unitRate: "24.45p / kWh",
     standingCharge: "40.30p / day",
     annual: 10380,
@@ -51,6 +56,7 @@ const QUOTES: Quote[] = [
     supplier: "British Gas",
     short: "BG",
     tint: "brand",
+    logo: SUPPLIER_LOGOS["british-gas"],
     unitRate: "25.10p / kWh",
     standingCharge: "42.10p / day",
     annual: 10620,
@@ -63,6 +69,7 @@ const QUOTES: Quote[] = [
     supplier: "EDF Energy",
     short: "EDF",
     tint: "accent",
+    logo: SUPPLIER_LOGOS["edf-energy"],
     unitRate: "25.28p / kWh",
     standingCharge: "41.85p / day",
     annual: 10720,
@@ -75,6 +82,7 @@ const QUOTES: Quote[] = [
     supplier: "Scottish Power",
     short: "SP",
     tint: "brand",
+    logo: SUPPLIER_LOGOS["scottish-power"],
     unitRate: "25.45p / kWh",
     standingCharge: "43.20p / day",
     annual: 10810,
@@ -87,6 +95,7 @@ const QUOTES: Quote[] = [
     supplier: "SSE",
     short: "SSE",
     tint: "accent",
+    logo: SUPPLIER_LOGOS["sse"],
     unitRate: "25.80p / kWh",
     standingCharge: "42.50p / day",
     annual: 10920,

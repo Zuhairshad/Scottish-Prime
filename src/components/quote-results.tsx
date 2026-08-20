@@ -6,6 +6,8 @@ import { ButtonLink } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 
+import { SUPPLIER_LOGOS } from "@/data/suppliers";
+
 export type Quote = {
   supplier: string;
   short: string;
@@ -18,6 +20,20 @@ export type Quote = {
   green: boolean;
   tier: "Major" | "Challenger" | "SME" | "Specialist";
   badge?: string;
+  logo?: string;
+};
+
+const SUPPLIER_SLUGS: Record<string, string> = {
+  "British Gas": "british-gas",
+  "EDF Energy": "edf-energy",
+  "E.ON Next": "eon-next",
+  "Scottish Power": "scottish-power",
+  "SSE": "sse",
+  "Drax": "drax",
+  "Total Energies": "total-energies",
+  "Npower": "npower-business",
+  "Pozitive Energy": "pozitive-energy",
+  "Yu Energy": "yu-energy",
 };
 
 const tintClass: Record<Quote["tint"], string> = {
@@ -238,6 +254,42 @@ export function QuoteResults({ quotes }: { quotes: Quote[] }) {
   );
 }
 
+function SupplierLogoBadge({
+  supplier,
+  short,
+  tint,
+  logo,
+}: {
+  supplier: string;
+  short: string;
+  tint: Quote["tint"];
+  logo?: string;
+}) {
+  const [imgError, setImgError] = useState(false);
+  const resolvedLogo = logo || SUPPLIER_LOGOS[SUPPLIER_SLUGS[supplier] || ""];
+
+  if (resolvedLogo && !imgError) {
+    return (
+      <span className="relative inline-flex items-center justify-center w-12 h-12 rounded-full bg-white border border-hairline-strong p-2 flex-shrink-0 shadow-sm overflow-hidden">
+        <img
+          src={resolvedLogo}
+          alt={`${supplier} logo`}
+          onError={() => setImgError(true)}
+          className="max-h-full max-w-full object-contain"
+        />
+      </span>
+    );
+  }
+
+  return (
+    <span
+      className={`inline-flex items-center justify-center w-12 h-12 rounded-full font-semibold text-[13px] flex-shrink-0 ${tintClass[tint]}`}
+    >
+      {short}
+    </span>
+  );
+}
+
 function QuoteRow({
   quote,
   rank,
@@ -256,11 +308,12 @@ function QuoteRow({
     >
       <div className="grid md:grid-cols-[auto_1fr_auto] gap-5 p-5 items-center">
         <div className="flex items-center gap-3">
-          <span
-            className={`inline-flex items-center justify-center w-12 h-12 rounded-full font-semibold text-[13px] flex-shrink-0 ${tintClass[quote.tint]}`}
-          >
-            {quote.short}
-          </span>
+          <SupplierLogoBadge
+            supplier={quote.supplier}
+            short={quote.short}
+            tint={quote.tint}
+            logo={quote.logo}
+          />
           <div>
             <p className="t-h5 text-ink">{quote.supplier}</p>
             <div className="flex gap-2 mt-1 flex-wrap">
