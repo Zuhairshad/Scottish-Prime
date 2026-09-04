@@ -8,6 +8,8 @@ import { Card } from "@/components/ui/card";
 
 export function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   if (submitted) {
     return (
@@ -28,10 +30,10 @@ export function ContactForm() {
           procurement team will reply within one working hour on weekdays.
           For urgent contract queries you can always call us on{" "}
           <a
-            href="tel:08009888375"
+            href="tel:+447445983642"
             className="text-accent-green hover:underline"
           >
-            0800 9888 375
+            +44 7445 983642
           </a>
           .
         </p>
@@ -56,6 +58,7 @@ export function ContactForm() {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setError(null);
     const formData = new FormData(e.currentTarget);
     const firstName = (formData.get("firstName") as string || "").trim();
     const lastName = (formData.get("lastName") as string || "").trim();
@@ -65,8 +68,19 @@ export function ContactForm() {
     const topic = formData.get("topic") as string;
     const message = (formData.get("message") as string || "").trim();
 
+    if (!email) {
+      setError("Email address is mandatory.");
+      return;
+    }
+    if (!phone) {
+      setError("Contact number is mandatory.");
+      return;
+    }
+
+    setIsSubmitting(true);
+
     try {
-      await fetch("/api/send-lead", {
+      const res = await fetch("/api/send-lead", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -81,8 +95,17 @@ export function ContactForm() {
           message,
         }),
       });
+
+      const data = await res.json();
+      if (!res.ok && data?.error) {
+        setError(data.error);
+        setIsSubmitting(false);
+        return;
+      }
     } catch (err) {
       console.error("Failed to submit lead:", err);
+    } finally {
+      setIsSubmitting(false);
     }
 
     setSubmitted(true);
@@ -94,13 +117,18 @@ export function ContactForm() {
         onSubmit={handleSubmit}
         className="space-y-4"
       >
+        {error && (
+          <div className="p-3 text-sm text-red-700 bg-red-50 border border-red-200 rounded-[8px]">
+            {error}
+          </div>
+        )}
         <div className="grid grid-cols-2 gap-4">
           <Field label="First name" name="firstName" placeholder="Sarah" />
           <Field label="Last name" name="lastName" placeholder="Whitfield" />
         </div>
         <Field label="Business name" name="business" placeholder="Maven Logistics Ltd" />
         <Field label="Work email" name="email" type="email" placeholder="sarah@maven.co.uk" required />
-        <Field label="Phone" name="phone" type="tel" placeholder="07700 900123" />
+        <Field label="Contact number" name="phone" type="tel" placeholder="07700 900123" required />
         <label className="block">
           <span className="t-body-sm-med text-ink block mb-1.5">
             What do you need help with?
@@ -131,8 +159,8 @@ export function ContactForm() {
             className="w-full rounded-[8px] px-3 py-2.5 t-body bg-paper border border-hairline-strong text-ink placeholder:text-ink-soft outline-none focus:border-accent-green focus:border-2"
           />
         </label>
-        <Button variant="primary" className="w-full" type="submit">
-          Send message →
+        <Button variant="primary" className="w-full" type="submit" disabled={isSubmitting}>
+          {isSubmitting ? "Sending message..." : "Send message →"}
         </Button>
         <p className="t-body-sm text-ink-soft text-center">
           By submitting you agree to our{" "}

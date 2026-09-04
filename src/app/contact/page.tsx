@@ -37,7 +37,7 @@ export default function ContactPage() {
             </p>
 
             <div className="mt-8 flex flex-wrap gap-x-8 gap-y-3 t-body-sm-med text-white">
-              <span><span className="text-gold">★</span> 0800 9888 375</span>
+              <span><span className="text-gold">★</span> +44 7445 983642</span>
               <span><span className="text-gold">★</span> info@scottprimeenergy.co.uk</span>
               <span><span className="text-gold">★</span> Under 1hr response</span>
             </div>
@@ -53,7 +53,7 @@ export default function ContactPage() {
               tagVariant="green"
               title="Get a quote"
               body="Talk through your renewal or set up a new contract with our procurement team."
-              phone="0800 9888 375"
+              phone="+44 7445 983642"
               email="info@scottprimeenergy.co.uk"
             />
             <ContactCard
@@ -61,16 +61,16 @@ export default function ContactPage() {
               tagVariant="green-soft"
               title="Existing customers"
               body="Billing queries, contract changes, meter issues, your account team is on the other end."
-              phone="0161 521 3400"
-              email="support@scottishprimeenergy.co.uk"
+              phone="+44 7445 983642"
+              email="info@scottprimeenergy.co.uk"
             />
             <ContactCard
               tag="Press"
               tagVariant="house"
               title="Press & partnerships"
               body="Media enquiries, partnership proposals, careers and corporate."
-              phone="0161 521 3500"
-              email="press@scottishprimeenergy.co.uk"
+              phone="+44 7445 983642"
+              email="info@scottprimeenergy.co.uk"
             />
           </div>
         </Container>
@@ -91,6 +91,16 @@ export default function ContactPage() {
 
               <div className="mt-10 space-y-6">
                 <InfoRow label="Head office" value="Bothwell Street, Glasgow, G2 4JR" />
+                <InfoRow
+                  label="Email"
+                  value="info@scottprimeenergy.co.uk"
+                  href="mailto:info@scottprimeenergy.co.uk"
+                />
+                <InfoRow
+                  label="Direct phone"
+                  value="+44 7445 983642"
+                  href="tel:+447445983642"
+                />
                 <InfoRow label="Companies House" value="04967449" />
                 <InfoRow label="Trustpilot" value="4.8 / 5 from 12,000+ reviews" />
               </div>
@@ -182,11 +192,28 @@ function ContactCard({
   );
 }
 
-function InfoRow({ label, value }: { label: string; value: string }) {
+function InfoRow({
+  label,
+  value,
+  href,
+}: {
+  label: string;
+  value: string;
+  href?: string;
+}) {
   return (
     <div>
       <p className="t-eyebrow text-ink-soft">{label}</p>
-      <p className="t-body text-ink mt-1">{value}</p>
+      {href ? (
+        <a
+          href={href}
+          className="t-body text-ink hover:text-accent-green transition-colors mt-1 inline-block"
+        >
+          {value}
+        </a>
+      ) : (
+        <p className="t-body text-ink mt-1">{value}</p>
+      )}
     </div>
   );
 }

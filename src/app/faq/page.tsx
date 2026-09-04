@@ -132,7 +132,7 @@ const sections: Section[] = [
     items: [
       {
         q: "Who do I contact if something goes wrong?",
-        a: "Your dedicated account manager, their direct line is in your myHUB dashboard, or call us on 0161 521 3400.",
+        a: "Your dedicated account manager, their direct line is in your myHUB dashboard, or call us on +44 7445 983642.",
       },
       {
         q: "What is myHUB?",
@@ -237,8 +237,8 @@ export default function FaqPage() {
               <ButtonLink href="/contact" variant="primary">
                 Contact us →
               </ButtonLink>
-              <ButtonLink href="tel:08009888375" variant="outline">
-                0800 9888 375
+              <ButtonLink href="tel:+447445983642" variant="outline">
+                +44 7445 983642
               </ButtonLink>
             </div>
           </Card>

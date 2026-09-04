@@ -19,6 +19,15 @@ export async function POST(req: Request) {
 
     console.log(`[Lead received] Form: ${formType}, Page: ${pageUrl}`, fields);
 
+    if (formType === "Contact Form") {
+      if (!fields.email || !String(fields.email).trim() || !fields.phone || !String(fields.phone).trim()) {
+        return NextResponse.json(
+          { success: false, error: "Both email address and contact number are mandatory." },
+          { status: 400 }
+        );
+      }
+    }
+
     if (!smtpPass || smtpPass === "your_webmail_password_here") {
       console.warn("WARNING: SMTP_PASSWORD is not set. Lead logged to console (skipping direct email dispatch).");
       return NextResponse.json({
